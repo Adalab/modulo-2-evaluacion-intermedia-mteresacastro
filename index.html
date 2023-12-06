@@ -7,25 +7,28 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <main>
+<main>
         <form action="" class="formGame">
             <fieldset class="boxGame">
                 <legend class="boxGame__title">Juego Piedra, Papel y Tijera</legend>
                 <p class="boxGame__explain ">Introduce aquí tu jugada:</p>
                 <div>
                     <select class="boxGame__select js-select" name="game" id="game">
-                    <option class="js-disabled" disabled selected value="disabled">Seleccione su jugada</option>
-                    <option class="js-rock" value="rock">Piedra</option>
-                    <option class="js-paper" value="paper">Papel</option>
-                    <option class="js-scissors" value="scissors">Tijera</option>
+                        <option class="js-disabled" disabled selected value="disabled">Seleccione su jugada</option>
+                        <option class="js-rock" value="rock">Piedra</option>
+                        <option class="js-paper" value="paper">Papel</option>
+                        <option class="js-scissors" value="scissors">Tijera</option>
                     </select>
                     <button type="submit" class="boxGame__button js-button">Jugar</button>
                 </div>
                 <div class="boxGame__result js-result">Vamos a Jugar!</div>
-                <p class="boxGame__playerCounter">Jugador: <span class="js-playerCounter"></span></p>
-                <p class="boxGame__pcCounter">Computadora: <span class="js-pcCounter"></span></p>
-                <p class="resultComment js-resultComment"></p>
-                <button class="restart__button hidden js-restartButton">¡Volvamos a jugar!</button>
+                <p class="boxGame__playerCounter">Jugador: <span class="js-playerCounter">0</span></p>
+                <p class="boxGame__pcCounter">Computadora: <span class="js-pcCounter">0</span></p>
+                <div class="results">
+                    <p class="resultComment js-resultComment"></p>
+                    <button class="restart__button hidden js-restartButton">¡Volvamos a jugar!</button>
+                </div>
+                <img class="image" src="./images/paw-sign-of-rock-paper-scissors-game-vector (1).png" alt="imagen pata de gatitos mostrando piedra, papel o tijera">
             </fieldset>
         </form>
     </main>
